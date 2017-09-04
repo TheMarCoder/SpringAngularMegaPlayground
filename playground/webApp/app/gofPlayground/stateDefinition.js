@@ -15,15 +15,15 @@ config(['$locationProvider', '$routeProvider', '$stateProvider',
               templateUrl: "gofPlayground/gofPlayground.html"
             })
 
-            .state('gofPlayground.overview', {
-              url: "/overview",
+            .state('gofPlayground.patterns', {
+              url: "/patterns",
               views: {
                   'console@gofPlayground': {
                         templateUrl: "gofPlayground/views/console/console.html"},
                   'headline@gofPlayground': {
-                        template: "<h1>GoF Playground</h1><br>" },
-                  'overview@gofPlayground': {
-                        template: "<button type='button' class='btn btn-default' ng-click='console.executeHealthCheck()'>Execute healthcheck</button>" }
+                        template: "<h1>Pattern overview</h1><br>" },
+                  'content@gofPlayground': {
+                        templateUrl: "gofPlayground/views/patterns/patternOverview.html" }
               }
         });
 }]);

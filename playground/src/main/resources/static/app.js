@@ -9,5 +9,5 @@ angular.module('myApp', [
 ]).
 config(['$urlRouterProvider',
     function( $urlRouterProvider) {
-        $urlRouterProvider.otherwise('/playground/gof/overview');
+        $urlRouterProvider.otherwise('/playground/gof/patterns');
 }]);
