@@ -1,0 +1,1 @@
+# S4_AJS_GOF_Patterns
