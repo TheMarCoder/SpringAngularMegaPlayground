@@ -5,10 +5,9 @@ angular.module('myApp', [
   'ui.router',
   'ngRoute',
   'myApp.version',
-  'myApp.springPlayground',
-  'myApp.angularPlayground'
+  'myApp.gofPlayground'
 ]).
 config(['$urlRouterProvider',
     function( $urlRouterProvider) {
-        $urlRouterProvider.otherwise('/playground/spring/overview');
+        $urlRouterProvider.otherwise('/playground/gof/overview');
 }]);

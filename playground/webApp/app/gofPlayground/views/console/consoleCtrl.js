@@ -2,7 +2,7 @@
  * Created by BurggrafM on 13.06.2017.
  */
 
-angular.module('myApp.springPlayground')
+angular.module('myApp.gofPlayground')
     .controller('consoleCtrl', consoleCtrl);
 
     function consoleCtrl(healthCheckService) {
