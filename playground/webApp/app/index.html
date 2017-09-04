@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+  <head>
+    <link href="app.css" rel="stylesheet">
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>TheMarCoder playground</title>
+  </head>
+  <body>
+
+    <!-- bower -->
+    <script src="bower_components/jquery/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="bower_components/jquery/jquery.js"></script>
+
+    <!-- app -->
+    <script src="app.js"></script>
+    <script src="springPlayground/stateDefinition.js"></script>
+    <script src="angularPlayground/stateDefinition.js"></script>
+
+    <script src="springPlayground/views/console/consoleCtrl.js"></script>
+    <script src="springPlayground/services/healthCheckService.js"></script>
+
+    <!-- components -->
+    <script src="components/version/version.js"></script>
+    <script src="components/version/version-directive.js"></script>
+    <script src="components/version/interpolate-filter.js"></script>
+
+    <div class="container-fluid">
+      <div class="playgroundHeader col-xs-12 text-center">
+        <div>Marco's</div>
+        <h4>Spring 4 and AngularJS playground</h4>
+      </div>
+
+        <ul class="nav col-xs-12 nav-tabs">
+          <li ui-sref-active="active"><a ui-sref="springPlayground.overview">Spring 4</a></li>
+          <li ui-sref-active="active"><a ui-sref="angularPlayground">AngularJS</a></li>
+        </ul>
+
+      <!-- THIS IS WHERE WE WILL INJECT OUR CONTENT ============================== -->
+      <div ui-view></div>
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,7 @@
+<div class='console'>
+    <button ng-click='console.clear()' class='btn btn-block btn-default'>Clear console</button>
+    <br>
+    <div ng-repeat="logEntry in console.logEntries track by $index">
+        {{logEntry}}
+    </div>
+</div>
