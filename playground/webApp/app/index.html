@@ -2,6 +2,7 @@
 <html lang="en" ng-app="myApp">
   <head>
     <link href="app.css" rel="stylesheet">
+    <link href="bower_components/popper.js/dist/umd/popper.min.js" rel="stylesheet">
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <title>TheMarCoder playground</title>
   </head>
@@ -32,10 +33,6 @@
         <div>Marco's</div>
         <h4>GOF pattern playground</h4>
       </div>
-
-        <ul class="nav col-xs-12 nav-tabs">
-          <li ui-sref-active="active"><a ui-sref="gofPlayground.patterns">GoF patterns</a></li>
-        </ul>
 
       <!-- THIS IS WHERE WE WILL INJECT OUR CONTENT ============================== -->
       <div ui-view></div>

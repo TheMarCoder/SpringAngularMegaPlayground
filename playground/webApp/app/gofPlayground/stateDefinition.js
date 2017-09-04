@@ -18,8 +18,8 @@ config(['$locationProvider', '$routeProvider', '$stateProvider',
             .state('gofPlayground.patterns', {
               url: "/patterns",
               views: {
-                  'console@gofPlayground': {
-                        templateUrl: "gofPlayground/views/console/console.html"},
+                  // 'console@gofPlayground': {
+                  //       templateUrl: "gofPlayground/views/console/console.html"},
                   'headline@gofPlayground': {
                         template: "<h1>Pattern overview</h1><br>" },
                   'content@gofPlayground': {
