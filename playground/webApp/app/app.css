@@ -39,7 +39,6 @@
     font-family: "Times New Roman";
 }
 
-.fixed-panel {
-  min-height: 180px;
-  max-height: 180px;
+.fixed-panel-body {
+  min-height: 130px;
 }
