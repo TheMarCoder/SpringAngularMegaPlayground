@@ -11,6 +11,6 @@ angular.module('myApp.gofPlayground')
 
 .controller('factoryMethodCtrl', factoryMethodCtrl);
 
-    function factoryMethodCtrl() {
-        alert("hello factory method")
+    function factoryMethodCtrl($scope) {
+        $scope.console.log("hello factory method");
     }

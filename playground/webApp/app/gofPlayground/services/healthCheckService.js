@@ -16,7 +16,7 @@ angular.module('myApp.gofPlayground')
                 }
               )
               .error(function (error) {
-                  logEntries.push(error === null ? "Backend healthCheck ... FAILED" : error);
+                  logEntries.push(error === null ? "backend healthCheck ... FAILED" : error);
               });
         }
     }

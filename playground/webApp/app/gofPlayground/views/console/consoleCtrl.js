@@ -8,6 +8,7 @@ angular.module('myApp.gofPlayground')
     function consoleCtrl(healthCheckService) {
         var self = this;
         self.executeHealthCheck = executeHealthCheck;
+        self.log = log;
         self.clear = clear;
 
         clear();
@@ -15,6 +16,10 @@ angular.module('myApp.gofPlayground')
 
         function executeHealthCheck() {
             healthCheckService.executeHealthCheck(self.logEntries)
+        }
+        
+        function log(message) {
+            self.logEntries.push(message);
         }
         
         function clear() {

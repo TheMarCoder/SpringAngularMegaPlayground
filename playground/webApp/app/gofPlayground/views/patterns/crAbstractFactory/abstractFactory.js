@@ -11,6 +11,6 @@ angular.module('myApp.gofPlayground')
 
 .controller('abstractFactoryCtrl', abstractFactoryCtrl);
 
-    function abstractFactoryCtrl() {
-        alert("hello abstract factory")
+    function abstractFactoryCtrl($scope) {
+        $scope.console.log("hello abstract factory");
     }
