@@ -40,5 +40,14 @@
 }
 
 .fixed-panel-body {
-  min-height: 130px;
+  min-height: 150px;
+  max-height: 150px;
+  overflow-y: hidden;
+  /*overflow-y: scroll;*/
+}
+
+.ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
