@@ -11,7 +11,7 @@ import com.example.playground.playground.BaseTest;
 /**
  * Created by BurggrafM on 08.09.2017.
  */
-public class LoggableResponseBuilderTest extends BaseTest {
+public class LoggableResponseBuilderTest /*extends BaseTest*/ {
   private LoggableResponse.LoggableResponseBuilder responseBuilder = new LoggableResponse.LoggableResponseBuilder();
 
   @Test

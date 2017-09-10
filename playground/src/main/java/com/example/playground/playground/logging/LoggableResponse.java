@@ -1,12 +1,13 @@
 package com.example.playground.playground.logging;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collection;
 
 /**
  * Created by BurggrafM on 08.09.2017.
  */
-public class LoggableResponse {
+public class LoggableResponse implements Serializable{
   private Object content;
   private Collection<String> logEntries = new ArrayList<>();
 
