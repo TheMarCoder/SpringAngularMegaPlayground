@@ -4,6 +4,7 @@ import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.junit4.SpringRunner;
 
@@ -16,5 +17,6 @@ import org.springframework.test.context.junit4.SpringRunner;
 @ActiveProfiles({"test"})
 @Configuration
 @ComponentScan({"com.example.playground"})
+@EnableScheduling
 public abstract class BaseTest {
 }

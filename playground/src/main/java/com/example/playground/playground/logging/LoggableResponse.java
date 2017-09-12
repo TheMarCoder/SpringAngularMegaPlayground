@@ -7,7 +7,7 @@ import java.util.Collection;
 /**
  * Created by BurggrafM on 08.09.2017.
  */
-public class LoggableResponse implements Serializable{
+public class LoggableResponse implements Serializable {
   private Serializable content;
   private Collection<String> logEntries = new ArrayList<>();
 
