@@ -12,7 +12,9 @@ angular.module('myApp.gofPlayground')
         function executeHealthCheck(logEntries) {
             $http.get("/healthCheck")
               .success(function(response) {
+                  logEntries.push.apply(logEntries, response.logEntries);
                   logEntries.push(response.content);
+                  logEntries.push("_");
                 }
               )
               .error(function (error) {

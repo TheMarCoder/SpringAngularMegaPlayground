@@ -14,7 +14,7 @@ public class LoggableResponse implements Serializable {
   private LoggableResponse() {
   }
 
-  public Object getContent() {
+  public Serializable getContent() {
     return content;
   }
 

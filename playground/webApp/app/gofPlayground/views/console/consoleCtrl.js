@@ -12,7 +12,6 @@ angular.module('myApp.gofPlayground')
         self.clear = clear;
 
         clear();
-        executeHealthCheck();
 
         function executeHealthCheck() {
             healthCheckService.executeHealthCheck(self.logEntries)

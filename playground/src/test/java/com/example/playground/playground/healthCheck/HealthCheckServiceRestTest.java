@@ -17,6 +17,9 @@ public class HealthCheckServiceRestTest extends BaseTest {
   @Test
   public void testHealthCheck() {
     LoggableResponse response = healthCheckServiceRest.healthCheck();
+
+    Assert.assertEquals("Expected that log entry is '@GetMapping(value = '/healthCheck') called'",
+      "@GetMapping(value = '/healthCheck') called", response.getLogEntries().iterator().next());
     Assert.assertEquals("Expected that healtheck result content is 'backend healthCheck ... OK'",
       "backend healthCheck ... OK", response.getContent());
   }
