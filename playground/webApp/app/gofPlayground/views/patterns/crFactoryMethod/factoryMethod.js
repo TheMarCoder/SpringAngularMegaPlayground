@@ -11,7 +11,9 @@ angular.module('myApp.gofPlayground')
 
 .controller('factoryMethodCtrl', factoryMethodCtrl);
 
-    function factoryMethodCtrl($scope) {
+    function factoryMethodCtrl($scope, restService) {
         //$scope.console.log("hello factory method");
         $scope.console.executeHealthCheck();
+
+        restService.GET("/fakeUrl", $scope.console);
     }

@@ -9,16 +9,17 @@ angular.module('myApp.gofPlayground')
         var self = this;
         self.executeHealthCheck = executeHealthCheck;
 
-        function executeHealthCheck(logEntries) {
+        function executeHealthCheck(console) {
             $http.get("/healthCheck")
               .success(function(response) {
-                  logEntries.push.apply(logEntries, response.logEntries);
-                  logEntries.push(response.content);
-                  logEntries.push("_");
+                  console.logEntries.push.apply(console.logEntries, response.logEntries);
+                  console.logEntries.push(response.content);
+                  console.logEntries.push("-");
                 }
               )
               .error(function (error) {
-                  logEntries.push(error === null ? "backend healthCheck ... FAILED" : error);
+                  console.logEntries.push(error === null ? "backend healthCheck ... FAILED" : error);
+                  console.logEntries.push("-");
               });
         }
     }

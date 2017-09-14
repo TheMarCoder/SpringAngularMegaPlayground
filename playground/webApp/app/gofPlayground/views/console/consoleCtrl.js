@@ -10,11 +10,12 @@ angular.module('myApp.gofPlayground')
         self.executeHealthCheck = executeHealthCheck;
         self.log = log;
         self.clear = clear;
+        self.logEntries = [];
 
         clear();
 
         function executeHealthCheck() {
-            healthCheckService.executeHealthCheck(self.logEntries)
+            healthCheckService.executeHealthCheck(self)
         }
         
         function log(message) {
