@@ -16,7 +16,7 @@ public class LoggableResponseAspect {
   @Autowired
   private LogEntryStorage logEntryStorage;
 
-  @Around("execution(LoggableResponse *.*(..))")
+  @Around("execution(LoggableResponse *.*(..)) && !execution(LoggableResponse buildResponse(..))")
   public LoggableResponse enrichResponseWithLogEntries(ProceedingJoinPoint joinPoint) throws Throwable {
     LoggableResponse response = (LoggableResponse) joinPoint.proceed();
     return new LoggableResponse
