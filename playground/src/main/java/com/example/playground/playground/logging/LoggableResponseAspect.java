@@ -17,7 +17,7 @@ public class LoggableResponseAspect {
   private LogEntryStorage logEntryStorage;
 
   @Around("execution(LoggableResponse *.*(..))")
-  public LoggableResponse enrichResponseWithLogeEntries(ProceedingJoinPoint joinPoint) throws Throwable {
+  public LoggableResponse enrichResponseWithLogEntries(ProceedingJoinPoint joinPoint) throws Throwable {
     LoggableResponse response = (LoggableResponse) joinPoint.proceed();
     return new LoggableResponse
       .LoggableResponseBuilder()
